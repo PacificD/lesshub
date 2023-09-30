@@ -1,0 +1,13 @@
+{
+  "name": "@pacificd/types",
+  "version": "1.0.0",
+  "description": "",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && tsc"
+  },
+  "license": "ISC"
+}
