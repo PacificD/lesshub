@@ -2,13 +2,9 @@
 
 import { useState } from 'react'
 import { copyTextToClipboard } from '@pacificd/utils'
-import {
-  Input,
-  Button,
-  Alert,
-  AlertTitle,
-  AlertDescription
-} from 'ui/components'
+import { Input } from 'ui/components/input'
+import { Button } from 'ui/components/button'
+import { Alert, AlertTitle, AlertDescription } from 'ui/components/alert'
 
 type Status = 'PENDING' | 'SUCCESS' | 'ERROR'
 

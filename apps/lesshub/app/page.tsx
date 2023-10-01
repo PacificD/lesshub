@@ -1,10 +1,10 @@
-import { Checkbox } from 'ui/components'
+import { Checkbox } from 'ui/components/checkbox'
 import CpText from '@/components/CpText'
 
 export default async function Home() {
   return (
     <main className='bg-red-100 w-full h-[100vh]'>
-      {/* <CpText /> */}
+      <CpText />
       <div className='flex items-center space-x-2'>
         <Checkbox id='terms2' />
         <label
