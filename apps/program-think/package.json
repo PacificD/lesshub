@@ -42,7 +42,8 @@
     "tailwindcss-animate": "^1.0.7",
     "typescript": "*"
   },
-  "peerDependencies": {
-    "shiki": "0.x"
-  }
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "packageManager": "pnpm@7.29.1"
 }
