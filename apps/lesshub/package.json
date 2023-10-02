@@ -9,22 +9,29 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@edgestore/react": "^0.1.4",
+    "@edgestore/server": "^0.1.4",
+    "lucide-react": "^0.279.0",
+    "next": "latest",
+    "next-themes": "^0.2.1",
     "react": "latest",
     "react-dom": "latest",
-    "next": "latest",
+    "react-dropzone": "^14.2.3",
+    "tailwind-merge": "^1.13.2",
+    "zod": "^3.22.2",
     "ui": "workspace:*",
     "@pacificd/utils": "workspace:*"
   },
   "devDependencies": {
-    "typescript": "*",
-    "tsconfig": "workspace:*",
-    "@types/react": "latest",
     "@types/node": "latest",
+    "@types/react": "latest",
     "@types/react-dom": "latest",
     "autoprefixer": "latest",
+    "eslint": "*",
+    "eslint-config-next": "latest",
     "postcss": "latest",
     "tailwindcss": "latest",
-    "eslint": "*",
-    "eslint-config-next": "latest"
+    "tsconfig": "workspace:*",
+    "typescript": "*"
   }
 }

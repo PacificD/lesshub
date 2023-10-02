@@ -1,0 +1,35 @@
+---
+title: 纯函数&副作用
+description: 纯函数与副作用，以及React FC.
+date: 2023-09-20
+---
+> 纯函数是具备幂等性（对于相同的参数，任何时间、时机，无论执行几次纯函数都将得到同样的结果），它不会引起副作用。
+>
+> 相同的输入就能得到固定的输出。
+>
+> 纯函数与外部的关联应该都来源于函数参数。如果一个函数直接依赖了外部变量，那它就不是纯函数，因为外部变量是可变的，那么纯函数的执行结果就不可控了。
+
+纯函数的概念常常在函数式编程（Functional Programming）中出现。而整个 FP 基本上就是围绕着`Pure function`展开的。
+
+函数式编程可以参考[Thin in FP](https://blog.jerry-hong.com/series/fp)。
+
+```javascript
+// 纯函数
+function pure(a, b) {
+  return a + b
+}
+// 非纯函数
+function impure(c) {
+  return c + d
+}
+```
+
+在函数式编程中，为了避免不必要的 bug，我们要保证函数尽可能地纯。
+
+- 改变数据使用 `immutable`的写法而非`mutable`
+
+纯函数：可组合、可分割、可重用。
+
+- 因为`Pure function`是可预期的，这让我们可以组合各个小的`Pure function`，变成一个大的 Function。
+- 也可以让一个大的`Pure function`切割成小的`Pure function`，而小的`Pure function`就可以重复使用。
+
