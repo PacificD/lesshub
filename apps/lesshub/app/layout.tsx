@@ -2,6 +2,7 @@ import '@ui/styles/globals.css'
 import type { Metadata } from 'next'
 import { ReactNode } from 'react'
 import { Inter as FontSans } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/react'
 import { cn } from '@ui/lib/utils'
 import { Toaster } from '@ui/components/toaster'
 import { TailwindIndicator } from '@/components/tailwind-indicator'
@@ -66,6 +67,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <TailwindIndicator />
           <Toaster />
         </Providers>
+        <Analytics />
       </body>
     </html>
   )

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Analytics } from '@vercel/analytics/react'
 import { ThemeProvider } from '@/app/providers'
 import { Container } from '@/components/Container'
 import { Navigation } from '@/components/Navigation'
@@ -75,6 +76,7 @@ export default function RootLayout({
             </Container>
           </footer>
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   )

@@ -11,16 +11,18 @@
   "dependencies": {
     "@edgestore/react": "^0.1.4",
     "@edgestore/server": "^0.1.4",
+    "@pacificd/utils": "workspace:*",
+    "@vercel/analytics": "^1.1.0",
     "lucide-react": "^0.279.0",
     "next": "latest",
     "next-themes": "^0.2.1",
+    "program-think": "workspace:^",
     "react": "latest",
     "react-dom": "latest",
     "react-dropzone": "^14.2.3",
     "tailwind-merge": "^1.13.2",
-    "zod": "^3.22.2",
     "ui": "workspace:*",
-    "@pacificd/utils": "workspace:*"
+    "zod": "^3.22.2"
   },
   "devDependencies": {
     "@types/node": "latest",
