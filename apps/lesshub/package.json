@@ -28,11 +28,11 @@
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
-    "autoprefixer": "latest",
+    "autoprefixer": "*",
     "eslint": "*",
     "eslint-config-next": "latest",
-    "postcss": "latest",
-    "tailwindcss": "latest",
+    "postcss": "*",
+    "tailwindcss": "*",
     "tsconfig": "workspace:*",
     "typescript": "*"
   }
