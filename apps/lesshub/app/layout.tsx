@@ -4,6 +4,7 @@ import { ReactNode } from 'react'
 import { Inter as FontSans } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/react'
 import { cn } from '@ui/lib/utils'
+import { Toaster as SonnerToaster } from 'sonner'
 import { Toaster } from '@ui/components/toaster'
 import { TailwindIndicator } from '@/components/tailwind-indicator'
 import { Header } from '@/components/header'
@@ -65,6 +66,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <main className='flex flex-1 flex-col'>{children}</main>
           <Footer />
           <TailwindIndicator />
+          <SonnerToaster position='top-center' richColors />
           <Toaster />
         </Providers>
         <Analytics />
