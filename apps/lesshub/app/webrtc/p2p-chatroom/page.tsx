@@ -1,5 +1,5 @@
 'use client'
-import { useState, useRef, useEffect, ElementRef, ChangeEvent } from 'react'
+import { useState, useRef, useEffect, ElementRef } from 'react'
 import Peer, { DataConnection, MediaConnection } from 'peerjs'
 import { toast } from 'sonner'
 
@@ -7,6 +7,7 @@ import { Button } from '@ui/components/button'
 import { Textarea } from '@ui/components/textarea'
 import { Spinner } from '@/components/spinner'
 import { Input } from '@ui/components/input'
+import { CopyButton } from '@ui/components/copy-button'
 
 interface IMsg {
   id: number
@@ -34,6 +35,7 @@ export default function P2PChatroom() {
   }
 
   const callUser = async () => {
+    if (!window || !navigator) return
     const stream = await navigator.mediaDevices.getUserMedia({
       video: true,
       audio: true
@@ -139,10 +141,17 @@ export default function P2PChatroom() {
   return (
     <main className='container'>
       <section className='flex items-center'>
-        <h1 className='mr-2 whitespace-nowrap flex items-center'>
-          <span className='mr-2 font-bold'>local Peer ID: </span>
-          {loading ? <Spinner /> : localId}
-        </h1>
+        <div className='mr-2 whitespace-nowrap flex items-center'>
+          <h1 className='mr-2 font-bold'>local Peer ID: </h1>
+          {loading ? (
+            <Spinner />
+          ) : (
+            <>
+              {localId}
+              <CopyButton value={localId} />
+            </>
+          )}
+        </div>
         <Input
           value={remoteId}
           onChange={e => setRemoteId(e.target.value)}
