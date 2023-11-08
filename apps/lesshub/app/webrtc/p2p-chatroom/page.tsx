@@ -1,6 +1,6 @@
 'use client'
 import { useState, useRef, useEffect, Suspense, ElementRef } from 'react'
-import Peer, { DataConnection, MediaConnection } from 'peerjs'
+import { DataConnection, MediaConnection } from 'peerjs'
 import { toast } from 'sonner'
 
 import { Button } from '@ui/components/button'
@@ -24,7 +24,7 @@ function P2PChatroom() {
 
   const currentCall = useRef<MediaConnection>()
   const currentConnection = useRef<DataConnection>()
-  const peer = useRef<Peer>()
+  const peer = useRef<any>()
   const localVideo = useRef<ElementRef<'video'>>(null)
   const remoteVideo = useRef<ElementRef<'video'>>(null)
 
@@ -48,19 +48,19 @@ function P2PChatroom() {
       toast.success('connected!')
     })
 
-    connection.on('data', data => {
+    connection.on('data', (data: string) => {
       setMessages(curtMessages => [
         ...curtMessages,
-        { id: curtMessages.length + 1, type: 'remote', data: data as string }
+        { id: curtMessages.length + 1, type: 'remote', data }
       ])
     })
 
     const call = peer.current?.call(remoteId, stream)
-    call?.on('stream', stream => {
+    call?.on('stream', (stream: MediaStream) => {
       remoteVideo.current!.srcObject = stream
       remoteVideo.current?.play()
     })
-    call?.on('error', err => {
+    call?.on('error', (err: Error) => {
       console.error(err)
       toast.error('connect error!')
     })
@@ -86,14 +86,15 @@ function P2PChatroom() {
     setCustomMsg('')
   }
 
-  const createPeer = () => {
+  const createPeer = async () => {
+    const Peer = (await import('peerjs')).default
     peer.current = new Peer()
-    peer.current.on('open', id => {
+    peer.current.on('open', (id: string) => {
       setLocalId(id)
       setLoading(false)
     })
 
-    peer.current.on('connection', connection => {
+    peer.current.on('connection', (connection: DataConnection) => {
       // receive message from remote
       connection.on('data', data => {
         setMessages(curtMessages => [
@@ -105,7 +106,7 @@ function P2PChatroom() {
       currentConnection.current = connection
     })
 
-    peer.current.on('call', async call => {
+    peer.current.on('call', async (call: any) => {
       if (window.confirm(`receive ${call.peer}?`)) {
         const stream = await navigator.mediaDevices.getUserMedia({
           video: true,
@@ -116,7 +117,7 @@ function P2PChatroom() {
 
         call.answer(stream)
 
-        call.on('stream', stream => {
+        call.on('stream', (stream: MediaStream) => {
           remoteVideo.current!.srcObject = stream
           remoteVideo.current?.play()
         })
