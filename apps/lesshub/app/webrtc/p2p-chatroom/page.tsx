@@ -35,41 +35,42 @@ export default function P2PChatroom() {
   }
 
   const callUser = async () => {
-    'use client'
-    const stream = await navigator.mediaDevices.getUserMedia({
-      video: true,
-      audio: true
-    })
-    localVideo.current!.srcObject = stream
-    localVideo.current?.play()
+    if (typeof window !== 'undefined') {
+      const stream = await navigator.mediaDevices.getUserMedia({
+        video: true,
+        audio: true
+      })
+      localVideo.current!.srcObject = stream
+      localVideo.current?.play()
 
-    const connection = peer.current!.connect(remoteId)
-    currentConnection.current = connection
-    connection.on('open', () => {
-      toast.success('connected!')
-    })
+      const connection = peer.current!.connect(remoteId)
+      currentConnection.current = connection
+      connection.on('open', () => {
+        toast.success('connected!')
+      })
 
-    connection.on('data', data => {
-      setMessages(curtMessages => [
-        ...curtMessages,
-        { id: curtMessages.length + 1, type: 'remote', data: data as string }
-      ])
-    })
+      connection.on('data', data => {
+        setMessages(curtMessages => [
+          ...curtMessages,
+          { id: curtMessages.length + 1, type: 'remote', data: data as string }
+        ])
+      })
 
-    const call = peer.current?.call(remoteId, stream)
-    call?.on('stream', stream => {
-      remoteVideo.current!.srcObject = stream
-      remoteVideo.current?.play()
-    })
-    call?.on('error', err => {
-      console.error(err)
-      toast.error('connect error!')
-    })
-    call?.on('close', () => {
-      endCall()
-    })
+      const call = peer.current?.call(remoteId, stream)
+      call?.on('stream', stream => {
+        remoteVideo.current!.srcObject = stream
+        remoteVideo.current?.play()
+      })
+      call?.on('error', err => {
+        console.error(err)
+        toast.error('connect error!')
+      })
+      call?.on('close', () => {
+        endCall()
+      })
 
-    currentCall.current = call
+      currentCall.current = call
+    }
   }
 
   const sendMsg = () => {
