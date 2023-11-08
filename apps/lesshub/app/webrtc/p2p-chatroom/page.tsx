@@ -35,7 +35,7 @@ export default function P2PChatroom() {
   }
 
   const callUser = async () => {
-    if (!window || !navigator) return
+    'use client'
     const stream = await navigator.mediaDevices.getUserMedia({
       video: true,
       audio: true
