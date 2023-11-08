@@ -1,13 +1,13 @@
 'use client'
-import { useState, useRef, useEffect, ElementRef } from 'react'
+import { useState, useRef, useEffect, Suspense, ElementRef } from 'react'
 import Peer, { DataConnection, MediaConnection } from 'peerjs'
 import { toast } from 'sonner'
 
 import { Button } from '@ui/components/button'
 import { Textarea } from '@ui/components/textarea'
-import { Spinner } from '@/components/spinner'
 import { Input } from '@ui/components/input'
 import { CopyButton } from '@ui/components/copy-button'
+import { Spinner } from '@/components/spinner'
 
 interface IMsg {
   id: number
@@ -15,7 +15,7 @@ interface IMsg {
   data: string
 }
 
-export default function P2PChatroom() {
+function P2PChatroom() {
   const [loading, setLoading] = useState(true)
   const [localId, setLocalId] = useState('')
   const [remoteId, setRemoteId] = useState('')
@@ -35,42 +35,40 @@ export default function P2PChatroom() {
   }
 
   const callUser = async () => {
-    if (typeof window !== 'undefined') {
-      const stream = await navigator.mediaDevices.getUserMedia({
-        video: true,
-        audio: true
-      })
-      localVideo.current!.srcObject = stream
-      localVideo.current?.play()
+    const stream = await navigator?.mediaDevices.getUserMedia({
+      video: true,
+      audio: true
+    })
+    localVideo.current!.srcObject = stream
+    localVideo.current?.play()
 
-      const connection = peer.current!.connect(remoteId)
-      currentConnection.current = connection
-      connection.on('open', () => {
-        toast.success('connected!')
-      })
+    const connection = peer.current!.connect(remoteId)
+    currentConnection.current = connection
+    connection.on('open', () => {
+      toast.success('connected!')
+    })
 
-      connection.on('data', data => {
-        setMessages(curtMessages => [
-          ...curtMessages,
-          { id: curtMessages.length + 1, type: 'remote', data: data as string }
-        ])
-      })
+    connection.on('data', data => {
+      setMessages(curtMessages => [
+        ...curtMessages,
+        { id: curtMessages.length + 1, type: 'remote', data: data as string }
+      ])
+    })
 
-      const call = peer.current?.call(remoteId, stream)
-      call?.on('stream', stream => {
-        remoteVideo.current!.srcObject = stream
-        remoteVideo.current?.play()
-      })
-      call?.on('error', err => {
-        console.error(err)
-        toast.error('connect error!')
-      })
-      call?.on('close', () => {
-        endCall()
-      })
+    const call = peer.current?.call(remoteId, stream)
+    call?.on('stream', stream => {
+      remoteVideo.current!.srcObject = stream
+      remoteVideo.current?.play()
+    })
+    call?.on('error', err => {
+      console.error(err)
+      toast.error('connect error!')
+    })
+    call?.on('close', () => {
+      endCall()
+    })
 
-      currentCall.current = call
-    }
+    currentCall.current = call
   }
 
   const sendMsg = () => {
@@ -211,5 +209,13 @@ export default function P2PChatroom() {
         </div>
       </section>
     </main>
+  )
+}
+
+export default function P2PChatroomPage() {
+  return (
+    <Suspense fallback=''>
+      <P2PChatroom />
+    </Suspense>
   )
 }
