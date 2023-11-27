@@ -24,7 +24,7 @@
   "packageManager": "pnpm@7.29.1",
   "scripts": {
     "dev": "turbo run dev --parallel",
-    "clean": "git clean -xdf node_modules",
+    "clean": "turbo clean",
     "clean:workspaces": "turbo clean",
     "lint": "turbo run lint",
     "db:generate": "turbo db:generate",

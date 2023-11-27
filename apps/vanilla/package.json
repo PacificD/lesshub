@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite --host",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "clean": "git clean -xdf node_modules"
   },
   "devDependencies": {
     "typescript": "^5.0.2",

@@ -4,7 +4,8 @@
   "license": "MIT",
   "scripts": {
     "lint": "eslint \"**/*.ts*\"",
-    "ui:add": "pnpm dlx shadcn-ui@latest add"
+    "ui:add": "pnpm dlx shadcn-ui@latest add",
+    "clean": "git clean -xdf node_modules"
   },
   "devDependencies": {
     "@types/node": "^17.0.12",
