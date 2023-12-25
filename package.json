@@ -32,7 +32,8 @@
     "format": "prettier --write \"**/*.{js,cjs,mjs,ts,tsx,md,json}\" --ignore-path .gitignore",
     "type-check": "turbo type-check",
     "build": "turbo run build",
-    "ui:add": "pnpm --filter ui ui:add"
+    "ui:add": "pnpm --filter ui ui:add",
+    "publish": "turbo run publish"
   },
   "devDependencies": {
     "@types/node": "latest",
