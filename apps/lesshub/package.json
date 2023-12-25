@@ -13,6 +13,7 @@
     "@edgestore/react": "^0.1.4",
     "@edgestore/server": "^0.1.4",
     "@pacificd/utils": "workspace:*",
+    "@pacificd/hooks": "workspace:*",
     "@vercel/analytics": "^1.1.0",
     "class-variance-authority": "^0.7.0",
     "lucide-react": "^0.279.0",
@@ -29,9 +30,6 @@
     "zod": "^3.22.2"
   },
   "devDependencies": {
-    "@types/node": "latest",
-    "@types/react": "latest",
-    "@types/react-dom": "latest",
     "autoprefixer": "*",
     "eslint": "*",
     "eslint-config-next": "latest",
