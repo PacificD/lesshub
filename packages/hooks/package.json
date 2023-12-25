@@ -1,17 +1,22 @@
 {
   "name": "@pacificd/hooks",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "author": "PacificD",
-  "description": "",
-  "types": "dist/index.d.ts",
-  "files": [
-    "dist"
+  "description": "React custom hooks",
+  "keywords": [
+    "react",
+    "react hooks"
   ],
-  "repository": "https://github.com/pacificd/lesshub",
   "license": "ISC",
+  "repository": "https://github.com/pacificd/lesshub",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "rm -rf dist && tsc",
     "clean": "git clean -xdf node_modules"
+  },
+  "devDependencies": {
+    "react": "latest"
   },
   "peerDependencies": {
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
