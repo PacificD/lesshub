@@ -1,6 +1,7 @@
 {
   "name": "@pacificd/types",
   "version": "1.0.0",
+  "private": true,
   "description": "",
   "types": "dist/index.d.ts",
   "files": [

@@ -34,8 +34,7 @@
   ],
   "scripts": {
     "build": "tsup",
-    "clean": "git clean -xdf node_modules",
-    "publish": "tsup && changeset publish"
+    "clean": "git clean -xdf node_modules"
   },
   "devDependencies": {
     "tsup": "^8.0.1"
