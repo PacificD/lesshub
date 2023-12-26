@@ -1,14 +1,37 @@
 {
   "name": "@pacificd/utils",
-  "version": "1.0.0",
+  "version": "0.1.0",
+  "author": "PacificD",
   "description": "",
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "utils"
+  ],
   "license": "ISC",
+  "repository": "https://github.com/pacificd/lesshub",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "module": "dist/index.js",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./copyTextToClipboard": {
+      "require": "./dist/copyTextToClipboard.js",
+      "import": "./dist/copyTextToClipboard.mjs",
+      "types": "./dist/copyTextToClipboard.d.ts"
+    }
+  },
+  "files": [
+    "dist/*",
+    "package.json"
+  ],
   "scripts": {
-    "build": "rm -rf dist && tsc",
+    "build": "tsup",
     "clean": "git clean -xdf node_modules"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.1"
   }
 }
