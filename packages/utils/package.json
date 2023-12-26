@@ -21,6 +21,11 @@
       "require": "./dist/copyTextToClipboard.js",
       "import": "./dist/copyTextToClipboard.mjs",
       "types": "./dist/copyTextToClipboard.d.ts"
+    },
+    "./withOperation": {
+      "require": "./dist/withOperation.js",
+      "import": "./dist/withOperation.mjs",
+      "types": "./dist/withOperation.d.ts"
     }
   },
   "files": [
@@ -29,7 +34,8 @@
   ],
   "scripts": {
     "build": "tsup",
-    "clean": "git clean -xdf node_modules"
+    "clean": "git clean -xdf node_modules",
+    "publish": "tsup && changeset publish"
   },
   "devDependencies": {
     "tsup": "^8.0.1"
