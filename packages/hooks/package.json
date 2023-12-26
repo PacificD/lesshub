@@ -1,6 +1,6 @@
 {
   "name": "@pacificd/hooks",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "author": "PacificD",
   "description": "React custom hooks",
   "keywords": [
@@ -16,7 +16,7 @@
     "package.json"
   ],
   "scripts": {
-    "build": "rm -rf dist && tsc",
+    "build": "rm -rf dist && tsc -p tsconfig.json",
     "clean": "git clean -xdf node_modules"
   },
   "devDependencies": {
