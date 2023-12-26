@@ -1,8 +1,9 @@
 {
   "name": "lesshub",
   "description": "PNPM + Turborepo",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "author": "PacificD",
+  "private": "true",
   "keywords": [
     "Monorepo",
     "Turborepo",
@@ -19,7 +20,7 @@
     "packages/*"
   ],
   "engines": {
-    "node": ">=16.0.0"
+    "node": ">=18.0.0"
   },
   "packageManager": "pnpm@7.29.1",
   "scripts": {
