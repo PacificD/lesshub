@@ -1,6 +1,6 @@
 {
   "name": "@pacificd/hooks",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "author": "PacificD",
   "description": "React custom hooks",
   "keywords": [
@@ -9,18 +9,30 @@
   ],
   "license": "ISC",
   "repository": "https://github.com/pacificd/lesshub",
-  "main": "dist/index.js",
+  "main": "dist/index.mjs",
   "types": "dist/index.d.ts",
+  "module": "dist/index.mjs",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./useSnowflakes": {
+      "import": "./dist/useSnowflakes.mjs",
+      "types": "./dist/useSnowflakes.d.ts"
+    }
+  },
   "files": [
     "dist/*",
     "package.json"
   ],
   "scripts": {
-    "build": "rm -rf dist && tsc -p tsconfig.json",
+    "build": "tsup",
     "clean": "git clean -xdf node_modules"
   },
   "devDependencies": {
-    "react": "latest"
+    "react": "latest",
+    "tsup": "^8.0.1"
   },
   "peerDependencies": {
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
