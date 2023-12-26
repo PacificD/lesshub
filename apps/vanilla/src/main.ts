@@ -2,6 +2,7 @@ import './style.css'
 import typescriptLogo from './typescript.svg'
 import viteLogo from '/vite.svg'
 import { mutiCounter, setupCounter } from './counter.ts'
+import { copyTextToClipboard } from '@pacificd/utils/copyTextToClipboard'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
@@ -15,6 +16,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     <div class="card">
       <button id="counter" type="button"></button>
       <button id="muti" type="button"></button>
+      <button id="copy" type="button">copy text</button>
     </div>
     <p class="read-the-docs">
       Click on the Vite and TypeScript logos to learn more
@@ -24,3 +26,11 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 
 setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
 mutiCounter(document.querySelector<HTMLButtonElement>('#muti')!)
+document
+  .querySelector<HTMLButtonElement>('#copy')!
+  .addEventListener('click', () => {
+    const random = Math.random().toString()
+    copyTextToClipboard(random)
+      .then(() => console.log('success: ', random))
+      .catch(() => console.log('failure: ', random))
+  })

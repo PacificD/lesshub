@@ -9,11 +9,12 @@
     "preview": "vite preview",
     "clean": "git clean -xdf node_modules"
   },
+  "dependencies": {
+    "zustand": "^4.3.8",
+    "@pacificd/utils": "workspace:*"
+  },
   "devDependencies": {
     "typescript": "^5.0.2",
     "vite": "^4.3.9"
-  },
-  "dependencies": {
-    "zustand": "^4.3.8"
   }
 }
