@@ -18,6 +18,8 @@ class Snowflake {
   vy = 0
   r = 0
   o = 0
+  rotation = Math.PI / Math.floor(Math.random() * 4 + 1)
+  ellipse = Math.random() > 0.4
   config: SnowflakeConfig | undefined
 
   constructor(configOptions?: SnowflakeConfigOptions) {
@@ -108,7 +110,19 @@ export const useSnowflakes = ({
 
       ctx.globalAlpha = snowflake.o
       ctx.beginPath()
-      ctx.arc(snowflake.x, snowflake.y, snowflake.r, 0, Math.PI * 2, false)
+
+      snowflake.ellipse
+        ? ctx.ellipse(
+            snowflake.x,
+            snowflake.y,
+            snowflake.r,
+            snowflake.r * 1.25,
+            snowflake.rotation,
+            0,
+            Math.PI * 2
+          )
+        : ctx.arc(snowflake.x, snowflake.y, snowflake.r, 0, Math.PI * 2, false)
+
       ctx.closePath()
       ctx.fill()
 
