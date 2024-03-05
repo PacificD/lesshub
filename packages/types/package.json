@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "private": true,
   "description": "",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "rm -rf dist && tsc"
+    "build": "rm -rf dist && tsc -p tsconfig.json"
   },
   "license": "ISC"
 }
