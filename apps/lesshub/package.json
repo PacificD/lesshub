@@ -12,8 +12,9 @@
   "dependencies": {
     "@edgestore/react": "^0.1.4",
     "@edgestore/server": "^0.1.4",
-    "@pacificd/utils": "workspace:*",
+    "@flagship.io/js-sdk": "^3.3.2",
     "@pacificd/hooks": "workspace:*",
+    "@pacificd/utils": "workspace:*",
     "@vercel/analytics": "^1.1.0",
     "class-variance-authority": "^0.7.0",
     "lucide-react": "^0.279.0",
@@ -30,13 +31,13 @@
     "zod": "^3.22.2"
   },
   "devDependencies": {
+    "@pacificd/types": "*",
     "autoprefixer": "*",
     "eslint": "*",
     "eslint-config-next": "latest",
     "postcss": "*",
     "tailwindcss": "*",
     "tsconfig": "workspace:*",
-    "typescript": "*",
-    "@pacificd/types": "*"
+    "typescript": "*"
   }
 }
