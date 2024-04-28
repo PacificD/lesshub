@@ -1,0 +1,22 @@
+{
+  "name": "site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "pacificd",
+  "license": "ISC",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "dev": "webpack serve --config webpack.config.js --open"
+  },
+  "dependencies": {
+    "@pacificd/wasm": "link:../pkg"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "11",
+    "webpack": "5",
+    "webpack-cli": "5",
+    "webpack-dev-server": "4"
+  }
+}

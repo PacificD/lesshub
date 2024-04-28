@@ -36,7 +36,8 @@
     "ui:add": "pnpm --filter ui ui:add",
     "publish": "changeset publish --registry=https://registry.npmjs.org",
     "changeset": "changeset",
-    "packages-version": "changeset version"
+    "packages-version": "changeset version",
+    "wasm-build": "wasm-pack build ./packages/wasm --target web"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.1",
