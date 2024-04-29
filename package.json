@@ -28,8 +28,8 @@
     "clean": "turbo clean",
     "clean:workspaces": "turbo clean",
     "lint": "turbo run lint",
+    "db:push": "turbo run db:push",
     "db:generate": "turbo db:generate",
-    "db:push": "turbo db:push db:generate",
     "format": "prettier --write \"**/*.{js,cjs,mjs,ts,tsx,md,json}\" --ignore-path .gitignore",
     "type-check": "turbo type-check",
     "build": "turbo run build",
@@ -53,7 +53,7 @@
     "postcss": "8.4.29",
     "prettier": "^2.8.8",
     "tailwindcss": "3.3.3",
-    "turbo": "^1.11.2",
+    "turbo": "latest",
     "typescript": "^5.0.4"
   }
 }

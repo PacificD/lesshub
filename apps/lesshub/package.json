@@ -7,15 +7,18 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "db:push": "npx drizzle-kit push:pg",
     "clean": "git clean -xdf node_modules"
   },
   "dependencies": {
     "@edgestore/react": "^0.1.4",
     "@edgestore/server": "^0.1.4",
-    "@pacificd/utils": "workspace:*",
+    "@neondatabase/serverless": "^0.9.1",
     "@pacificd/hooks": "workspace:*",
+    "@pacificd/utils": "workspace:*",
     "@vercel/analytics": "^1.1.0",
     "class-variance-authority": "^0.7.0",
+    "drizzle-orm": "^0.30.9",
     "lucide-react": "^0.279.0",
     "next": "latest",
     "next-themes": "^0.2.1",
@@ -30,13 +33,14 @@
     "zod": "^3.22.2"
   },
   "devDependencies": {
+    "@pacificd/types": "*",
     "autoprefixer": "*",
+    "drizzle-kit": "^0.20.17",
     "eslint": "*",
     "eslint-config-next": "latest",
     "postcss": "*",
     "tailwindcss": "*",
     "tsconfig": "workspace:*",
-    "typescript": "*",
-    "@pacificd/types": "*"
+    "typescript": "*"
   }
 }

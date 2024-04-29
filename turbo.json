@@ -1,16 +1,12 @@
 {
   "$schema": "https://turbo.build/schema.json",
-  "globalDependencies": [
-    "**/.env",
-    "tsconfig.json"
-  ],
+  "globalDependencies": ["**/.env", "tsconfig.json"],
+  "experimentalUI": true,
   "pipeline": {
     "dev": {
       "cache": false,
       "persistent": true,
-      "dependsOn": [
-        "^build"
-      ]
+      "dependsOn": ["^build"]
     },
     "lesshub#dev": {
       "persistent": true,
@@ -27,43 +23,26 @@
         ".env.staging",
         ".env"
       ],
-      "dependsOn": [
-        "^build"
-      ]
+      "dependsOn": ["^build"]
     },
     "db:generate": {
-      "inputs": [
-        "prisma/schema.prisma"
-      ],
+      "inputs": ["prisma/schema.prisma"],
       "cache": false
     },
     "db:push": {
-      "inputs": [
-        "prisma/schema.prisma"
-      ],
+      "inputs": ["prisma/schema.prisma", "db/schema.ts"],
       "cache": false
     },
     "build": {
-      "dependsOn": [
-        "^build",
-        "^db:generate"
-      ],
-      "outputs": [
-        "dist/**",
-        ".next/**",
-        "!.next/.cache/**"
-      ]
+      "dependsOn": ["^build", "^db:generate"],
+      "outputs": ["dist/**", ".next/**", "!.next/.cache/**"]
     },
     "test": {
-      "outputs": [
-        "coverage/**"
-      ],
+      "outputs": ["coverage/**"],
       "dependsOn": []
     },
     "type-check": {
-      "dependsOn": [
-        "^db:generate"
-      ],
+      "dependsOn": ["^db:generate"],
       "cache": false
     },
     "clean": {
