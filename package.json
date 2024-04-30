@@ -30,6 +30,7 @@
     "lint": "turbo run lint",
     "db:push": "turbo run db:push",
     "db:generate": "turbo db:generate",
+    "studio": "turbo run studio",
     "format": "prettier --write \"**/*.{js,cjs,mjs,ts,tsx,md,json}\" --ignore-path .gitignore",
     "type-check": "turbo type-check",
     "build": "turbo run build",
