@@ -8,5 +8,7 @@
   "jsxBracketSameLine": false,
   "endOfLine": "auto",
   "arrowParens": "avoid",
-  "trailingComma": "none"
+  "trailingComma": "none",
+  "plugins": ["prettier-plugin-tailwindcss"],
+  "tailwindFunctions": ["clsx"]
 }
