@@ -32,7 +32,7 @@
     "clean": "git clean -xdf node_modules"
   },
   "devDependencies": {
-    "react": "latest",
+    "react": "18.2.0",
     "tsup": "^8.0.1"
   },
   "peerDependencies": {

@@ -5,9 +5,17 @@ node_modules/
 .turbo
 
 *.env
+.env.*
 !.env.example
 
-pnpm-lock.yaml
 package-lock.json
+
+.pi-subagents/
+**/.pi-subagents/
+benchmark/results/
+test-results/
+**/benchmark/results/
+**/test-results/
+**/coverage/
 
 .DS_Store

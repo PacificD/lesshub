@@ -3,7 +3,14 @@ module.exports = {
   extends: ['eslint:recommended', 'prettier'],
   plugins: ['@typescript-eslint', 'prettier'],
   ignorePatterns: ['*.cjs'],
-  overrides: [],
+  overrides: [
+    {
+      files: ['**/*.ts', '**/*.tsx'],
+      rules: {
+        'no-undef': 0
+      }
+    }
+  ],
   parserOptions: {
     sourceType: 'module',
     ecmaVersion: 2020

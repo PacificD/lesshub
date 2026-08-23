@@ -4,7 +4,7 @@ import type { Metadata } from 'next'
 const meta = {
   title: 'About Me',
   description: 'I like to blog about web development',
-  url: `${WEBSITE_HOST_URL}/about`,
+  url: `${WEBSITE_HOST_URL}/about`
 }
 
 export const metadata: Metadata = {
@@ -13,15 +13,15 @@ export const metadata: Metadata = {
   openGraph: {
     title: meta.title,
     description: meta.description,
-    url: meta.url,
+    url: meta.url
   },
   twitter: {
     title: meta.title,
-    description: meta.description,
+    description: meta.description
   },
   alternates: {
-    canonical: meta.url,
-  },
+    canonical: meta.url
+  }
 }
 
 export default function About() {

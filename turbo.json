@@ -34,13 +34,29 @@
       "cache": false
     },
     "studio": {},
+    "lint": {
+      "dependsOn": []
+    },
     "build": {
       "dependsOn": ["^build", "^db:generate"],
       "outputs": ["dist/**", ".next/**", "!.next/.cache/**"]
     },
     "test": {
-      "outputs": ["coverage/**"],
-      "dependsOn": []
+      "cache": false,
+      "outputs": [],
+      "dependsOn": ["^build"]
+    },
+    "test:e2e": {
+      "cache": false,
+      "dependsOn": ["build"]
+    },
+    "benchmark:quick": {
+      "cache": false,
+      "dependsOn": ["build"]
+    },
+    "benchmark:full": {
+      "cache": false,
+      "dependsOn": ["build"]
     },
     "type-check": {
       "dependsOn": ["^db:generate"],
