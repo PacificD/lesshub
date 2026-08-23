@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="360" viewBox="0 0 480 360" role="img" aria-labelledby="title">
+  <title id="title">Field supply object 02</title>
+  <rect width="480" height="360" fill="oklch(90% 0.025 47)"/>
+  <path d="M62 286L168 74h176l74 212H62Z" fill="none" stroke="#4d3b2e" stroke-width="2"/>
+  <circle cx="122" cy="114" r="42" fill="#c34d2f" opacity="0.82"/>
+  <path d="M82 126h316M82 148h220" stroke="#4d3b2e" stroke-width="3"/>
+  <text x="82" y="322" fill="#4d3b2e" font-family="Georgia,serif" font-size="42">02</text>
+</svg>

@@ -1,0 +1,48 @@
+{
+  "name": "@lesshub/hono-react",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.0.0 <23.0.0"
+  },
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "clean": "node -e \"require('node:fs').rmSync('dist',{recursive:true,force:true})\"",
+    "build:client": "vite build --config vite.client.config.ts",
+    "build:artifacts": "tsx scripts/generate-build-artifacts.tsx",
+    "build:server": "vite build --config vite.server.config.ts",
+    "build:verify": "tsx scripts/verify-build-artifacts.ts",
+    "build": "corepack pnpm run clean && corepack pnpm run build:client && corepack pnpm run build:artifacts && corepack pnpm run build:server && corepack pnpm run build:verify",
+    "runtime:check": "node ../../scripts/check-node22.cjs",
+    "start": "corepack pnpm run runtime:check && node dist/server/server.js",
+    "lint": "eslint src scripts tests e2e benchmark playwright.config.ts --ext .ts,.tsx",
+    "type-check": "tsc --noEmit",
+    "test": "corepack pnpm run runtime:check && vitest run --config vitest.config.ts --coverage",
+    "test:e2e": "corepack pnpm run runtime:check && node scripts/run-e2e.mjs",
+    "benchmark:quick": "corepack pnpm run runtime:check && tsx benchmark/runner.ts quick",
+    "benchmark:full": "corepack pnpm run runtime:check && tsx benchmark/runner.ts full"
+  },
+  "dependencies": {
+    "@hono/node-server": "1.19.5",
+    "@lesshub/commerce-contracts": "workspace:*",
+    "hono": "4.10.6",
+    "lru-cache": "11.2.2",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "redis": "4.7.1",
+    "zod": "3.25.76"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.59.1",
+    "@vitest/coverage-v8": "3.2.4",
+    "@types/node": "22.18.8",
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "autocannon": "8.0.0",
+    "tsx": "4.20.6",
+    "typescript": "5.9.3",
+    "vite": "6.1.0",
+    "vitest": "3.2.4"
+  }
+}
