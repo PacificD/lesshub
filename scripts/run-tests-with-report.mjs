@@ -14,7 +14,14 @@ async function discoverWorkspaces() {
     for (const entry of await readdir(root, { withFileTypes: true })) {
       if (!entry.isDirectory()) continue
       const relative = `${group}/${entry.name}`
-      const manifest = JSON.parse(await readFile(resolve(repoRoot, relative, 'package.json'), 'utf8'))
+      const manifestPath = resolve(repoRoot, relative, 'package.json')
+      let manifest
+      try {
+        manifest = JSON.parse(await readFile(manifestPath, 'utf8'))
+      } catch (error) {
+        if (error.code === 'ENOENT') continue
+        throw error
+      }
       workspaces.push({
         name: manifest.name ?? relative,
         relative,
