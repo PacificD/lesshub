@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "runId": "2026-08-22T204934-329Z-ea865659",
+  "createdAt": "2026-08-22T20:49:42.579Z",
+  "commit": "19e7461abf75936d2bf04e6f40f6e49c24f11929",
+  "dirty": true,
+  "node": "v22.20.0",
+  "react": "19.2.0",
+  "hono": "4.10.6",
+  "autocannon": "8.0.0",
+  "playwright": "1.59.1",
+  "os": "darwin 24.0.0 pacificd-2.local",
+  "cpu": "Apple M1 Pro",
+  "cpuCount": 8,
+  "memoryBytes": 17179869184,
+  "profile": "quick",
+  "chrome": {
+    "channel": "chrome",
+    "version": "151.0.7922.172"
+  },
+  "docker": {
+    "context": "desktop-linux",
+    "engineVersion": "25.0.3"
+  },
+  "parameters": {
+    "connections": 10,
+    "rounds": 1,
+    "warmSegments": 1,
+    "segmentSeconds": 10,
+    "browserSamples": 10,
+    "coldSerialPerRound": 10,
+    "coldBurstsPerRound": 3,
+    "combinedSamplesPerRound": 10,
+    "redisTtlSeconds": 30,
+    "targetCountry": "gb",
+    "targetLanguage": "en-us"
+  }
+}

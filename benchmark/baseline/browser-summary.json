@@ -1,0 +1,603 @@
+{
+  "schemaVersion": 1,
+  "profile": "quick",
+  "complete": true,
+  "results": [
+    {
+      "strategy": "html-cache",
+      "browserCache": "cold",
+      "serverCache": "cold",
+      "samples": 10,
+      "hydrationErrors": 0,
+      "ttfbMs": {
+        "p50": 8.300000011920929,
+        "p95": 10.300000011920929,
+        "p99": 10.300000011920929
+      },
+      "fcpMs": {
+        "p50": 68,
+        "p95": 72,
+        "p99": 72
+      },
+      "lcpMs": {
+        "p50": 68,
+        "p95": 72,
+        "p99": 72
+      },
+      "productVisibleMs": {
+        "p50": 24.900000005960464,
+        "p95": 27.200000002980232,
+        "p99": 27.200000002980232
+      },
+      "userMenuReadyMs": {
+        "p50": 70.3999999910593,
+        "p95": 140.29999999701977,
+        "p99": 140.29999999701977
+      },
+      "catalogMs": null,
+      "jsTransferBytes": {
+        "p50": 196268,
+        "p95": 196268,
+        "p99": 196268
+      },
+      "cssTransferBytes": {
+        "p50": 9790,
+        "p95": 9790,
+        "p99": 9790
+      },
+      "cacheEvidence": {
+        "measuredSamples": 10,
+        "assetRequests": 30,
+        "cacheHits": 0,
+        "networkTransfers": 30
+      }
+    },
+    {
+      "strategy": "html-cache",
+      "browserCache": "cold",
+      "serverCache": "warm",
+      "samples": 10,
+      "hydrationErrors": 0,
+      "ttfbMs": {
+        "p50": 2.9000000059604645,
+        "p95": 4.5,
+        "p99": 4.5
+      },
+      "fcpMs": {
+        "p50": 68,
+        "p95": 72,
+        "p99": 72
+      },
+      "lcpMs": {
+        "p50": 68,
+        "p95": 72,
+        "p99": 72
+      },
+      "productVisibleMs": {
+        "p50": 26.400000005960464,
+        "p95": 28.5,
+        "p99": 28.5
+      },
+      "userMenuReadyMs": {
+        "p50": 130.30000001192093,
+        "p95": 139.1000000089407,
+        "p99": 139.1000000089407
+      },
+      "catalogMs": null,
+      "jsTransferBytes": {
+        "p50": 196268,
+        "p95": 196268,
+        "p99": 196268
+      },
+      "cssTransferBytes": {
+        "p50": 9790,
+        "p95": 9790,
+        "p99": 9790
+      },
+      "cacheEvidence": {
+        "measuredSamples": 10,
+        "assetRequests": 30,
+        "cacheHits": 0,
+        "networkTransfers": 30
+      }
+    },
+    {
+      "strategy": "html-cache",
+      "browserCache": "warm",
+      "serverCache": "cold",
+      "samples": 10,
+      "hydrationErrors": 0,
+      "ttfbMs": {
+        "p50": 8.099999994039536,
+        "p95": 10,
+        "p99": 10
+      },
+      "fcpMs": {
+        "p50": 68,
+        "p95": 76,
+        "p99": 76
+      },
+      "lcpMs": {
+        "p50": 68,
+        "p95": 76,
+        "p99": 76
+      },
+      "productVisibleMs": {
+        "p50": 26.5,
+        "p95": 30.700000002980232,
+        "p99": 30.700000002980232
+      },
+      "userMenuReadyMs": {
+        "p50": 133.79999999701977,
+        "p95": 142.20000000298023,
+        "p99": 142.20000000298023
+      },
+      "catalogMs": null,
+      "jsTransferBytes": {
+        "p50": 0,
+        "p95": 0,
+        "p99": 0
+      },
+      "cssTransferBytes": {
+        "p50": 0,
+        "p95": 0,
+        "p99": 0
+      },
+      "cacheEvidence": {
+        "measuredSamples": 10,
+        "assetRequests": 30,
+        "cacheHits": 30,
+        "networkTransfers": 0
+      }
+    },
+    {
+      "strategy": "html-cache",
+      "browserCache": "warm",
+      "serverCache": "warm",
+      "samples": 10,
+      "hydrationErrors": 0,
+      "ttfbMs": {
+        "p50": 2.9000000059604645,
+        "p95": 4.100000008940697,
+        "p99": 4.100000008940697
+      },
+      "fcpMs": {
+        "p50": 68,
+        "p95": 84,
+        "p99": 84
+      },
+      "lcpMs": {
+        "p50": 68,
+        "p95": 84,
+        "p99": 84
+      },
+      "productVisibleMs": {
+        "p50": 26.30000001192093,
+        "p95": 27.5,
+        "p99": 27.5
+      },
+      "userMenuReadyMs": {
+        "p50": 71,
+        "p95": 140,
+        "p99": 140
+      },
+      "catalogMs": null,
+      "jsTransferBytes": {
+        "p50": 0,
+        "p95": 0,
+        "p99": 0
+      },
+      "cssTransferBytes": {
+        "p50": 0,
+        "p95": 0,
+        "p99": 0
+      },
+      "cacheEvidence": {
+        "measuredSamples": 10,
+        "assetRequests": 30,
+        "cacheHits": 30,
+        "networkTransfers": 0
+      }
+    },
+    {
+      "strategy": "data-cache",
+      "browserCache": "cold",
+      "serverCache": "cold",
+      "samples": 10,
+      "hydrationErrors": 0,
+      "ttfbMs": {
+        "p50": 8.300000011920929,
+        "p95": 10.799999997019768,
+        "p99": 10.799999997019768
+      },
+      "fcpMs": {
+        "p50": 64,
+        "p95": 68,
+        "p99": 68
+      },
+      "lcpMs": {
+        "p50": 64,
+        "p95": 68,
+        "p99": 68
+      },
+      "productVisibleMs": {
+        "p50": 26,
+        "p95": 27.400000005960464,
+        "p99": 27.400000005960464
+      },
+      "userMenuReadyMs": {
+        "p50": 128.5,
+        "p95": 138.90000000596046,
+        "p99": 138.90000000596046
+      },
+      "catalogMs": null,
+      "jsTransferBytes": {
+        "p50": 196268,
+        "p95": 196268,
+        "p99": 196268
+      },
+      "cssTransferBytes": {
+        "p50": 9790,
+        "p95": 9790,
+        "p99": 9790
+      },
+      "cacheEvidence": {
+        "measuredSamples": 10,
+        "assetRequests": 30,
+        "cacheHits": 0,
+        "networkTransfers": 30
+      }
+    },
+    {
+      "strategy": "data-cache",
+      "browserCache": "cold",
+      "serverCache": "warm",
+      "samples": 10,
+      "hydrationErrors": 0,
+      "ttfbMs": {
+        "p50": 5.600000008940697,
+        "p95": 6.4000000059604645,
+        "p99": 6.4000000059604645
+      },
+      "fcpMs": {
+        "p50": 72,
+        "p95": 80,
+        "p99": 80
+      },
+      "lcpMs": {
+        "p50": 72,
+        "p95": 80,
+        "p99": 80
+      },
+      "productVisibleMs": {
+        "p50": 27,
+        "p95": 58.20000000298023,
+        "p99": 58.20000000298023
+      },
+      "userMenuReadyMs": {
+        "p50": 84.69999998807907,
+        "p95": 142.09999999403954,
+        "p99": 142.09999999403954
+      },
+      "catalogMs": null,
+      "jsTransferBytes": {
+        "p50": 196268,
+        "p95": 196268,
+        "p99": 196268
+      },
+      "cssTransferBytes": {
+        "p50": 9790,
+        "p95": 9790,
+        "p99": 9790
+      },
+      "cacheEvidence": {
+        "measuredSamples": 10,
+        "assetRequests": 30,
+        "cacheHits": 0,
+        "networkTransfers": 30
+      }
+    },
+    {
+      "strategy": "data-cache",
+      "browserCache": "warm",
+      "serverCache": "cold",
+      "samples": 10,
+      "hydrationErrors": 0,
+      "ttfbMs": {
+        "p50": 8.400000005960464,
+        "p95": 14.200000002980232,
+        "p99": 14.200000002980232
+      },
+      "fcpMs": {
+        "p50": 68,
+        "p95": 80,
+        "p99": 80
+      },
+      "lcpMs": {
+        "p50": 68,
+        "p95": 80,
+        "p99": 80
+      },
+      "productVisibleMs": {
+        "p50": 26.099999994039536,
+        "p95": 29.900000005960464,
+        "p99": 29.900000005960464
+      },
+      "userMenuReadyMs": {
+        "p50": 127.29999999701977,
+        "p95": 137.90000000596046,
+        "p99": 137.90000000596046
+      },
+      "catalogMs": null,
+      "jsTransferBytes": {
+        "p50": 0,
+        "p95": 0,
+        "p99": 0
+      },
+      "cssTransferBytes": {
+        "p50": 0,
+        "p95": 0,
+        "p99": 0
+      },
+      "cacheEvidence": {
+        "measuredSamples": 10,
+        "assetRequests": 30,
+        "cacheHits": 30,
+        "networkTransfers": 0
+      }
+    },
+    {
+      "strategy": "data-cache",
+      "browserCache": "warm",
+      "serverCache": "warm",
+      "samples": 10,
+      "hydrationErrors": 0,
+      "ttfbMs": {
+        "p50": 5.899999991059303,
+        "p95": 6.5999999940395355,
+        "p99": 6.5999999940395355
+      },
+      "fcpMs": {
+        "p50": 72,
+        "p95": 80,
+        "p99": 80
+      },
+      "lcpMs": {
+        "p50": 72,
+        "p95": 80,
+        "p99": 80
+      },
+      "productVisibleMs": {
+        "p50": 27.099999994039536,
+        "p95": 54.70000000298023,
+        "p99": 54.70000000298023
+      },
+      "userMenuReadyMs": {
+        "p50": 131.09999999403954,
+        "p95": 144.20000000298023,
+        "p99": 144.20000000298023
+      },
+      "catalogMs": null,
+      "jsTransferBytes": {
+        "p50": 0,
+        "p95": 0,
+        "p99": 0
+      },
+      "cssTransferBytes": {
+        "p50": 0,
+        "p95": 0,
+        "p99": 0
+      },
+      "cacheEvidence": {
+        "measuredSamples": 10,
+        "assetRequests": 30,
+        "cacheHits": 30,
+        "networkTransfers": 0
+      }
+    },
+    {
+      "strategy": "live-ssr",
+      "browserCache": "cold",
+      "serverCache": "N/A",
+      "samples": 10,
+      "hydrationErrors": 0,
+      "ttfbMs": {
+        "p50": 5.0999999940395355,
+        "p95": 5.5,
+        "p99": 5.5
+      },
+      "fcpMs": {
+        "p50": 68,
+        "p95": 76,
+        "p99": 76
+      },
+      "lcpMs": {
+        "p50": 68,
+        "p95": 76,
+        "p99": 76
+      },
+      "productVisibleMs": {
+        "p50": 26,
+        "p95": 54.5,
+        "p99": 54.5
+      },
+      "userMenuReadyMs": {
+        "p50": 125.09999999403954,
+        "p95": 138.20000000298023,
+        "p99": 138.20000000298023
+      },
+      "catalogMs": null,
+      "jsTransferBytes": {
+        "p50": 196268,
+        "p95": 196268,
+        "p99": 196268
+      },
+      "cssTransferBytes": {
+        "p50": 9790,
+        "p95": 9790,
+        "p99": 9790
+      },
+      "cacheEvidence": {
+        "measuredSamples": 10,
+        "assetRequests": 30,
+        "cacheHits": 0,
+        "networkTransfers": 30
+      }
+    },
+    {
+      "strategy": "live-ssr",
+      "browserCache": "warm",
+      "serverCache": "N/A",
+      "samples": 10,
+      "hydrationErrors": 0,
+      "ttfbMs": {
+        "p50": 5.199999988079071,
+        "p95": 5.5,
+        "p99": 5.5
+      },
+      "fcpMs": {
+        "p50": 68,
+        "p95": 80,
+        "p99": 80
+      },
+      "lcpMs": {
+        "p50": 68,
+        "p95": 80,
+        "p99": 80
+      },
+      "productVisibleMs": {
+        "p50": 26.299999997019768,
+        "p95": 58.70000000298023,
+        "p99": 58.70000000298023
+      },
+      "userMenuReadyMs": {
+        "p50": 126.79999999701977,
+        "p95": 149.19999998807907,
+        "p99": 149.19999998807907
+      },
+      "catalogMs": null,
+      "jsTransferBytes": {
+        "p50": 0,
+        "p95": 0,
+        "p99": 0
+      },
+      "cssTransferBytes": {
+        "p50": 0,
+        "p95": 0,
+        "p99": 0
+      },
+      "cacheEvidence": {
+        "measuredSamples": 10,
+        "assetRequests": 30,
+        "cacheHits": 30,
+        "networkTransfers": 0
+      }
+    },
+    {
+      "strategy": "csr",
+      "browserCache": "cold",
+      "serverCache": "N/A",
+      "samples": 10,
+      "hydrationErrors": 0,
+      "ttfbMs": {
+        "p50": 1.4000000059604645,
+        "p95": 1.7999999970197678,
+        "p99": 1.7999999970197678
+      },
+      "fcpMs": {
+        "p50": 68,
+        "p95": 80,
+        "p99": 80
+      },
+      "lcpMs": {
+        "p50": 164,
+        "p95": 172,
+        "p99": 172
+      },
+      "productVisibleMs": {
+        "p50": 141.90000000596046,
+        "p95": 148.29999999701977,
+        "p99": 148.29999999701977
+      },
+      "userMenuReadyMs": {
+        "p50": 127.29999999701977,
+        "p95": 135.29999999701977,
+        "p99": 135.29999999701977
+      },
+      "catalogMs": {
+        "p50": 74.30000001192093,
+        "p95": 80.8999999910593,
+        "p99": 80.8999999910593
+      },
+      "jsTransferBytes": {
+        "p50": 256934,
+        "p95": 256934,
+        "p99": 256934
+      },
+      "cssTransferBytes": {
+        "p50": 9790,
+        "p95": 9790,
+        "p99": 9790
+      },
+      "cacheEvidence": {
+        "measuredSamples": 10,
+        "assetRequests": 40,
+        "cacheHits": 0,
+        "networkTransfers": 40
+      }
+    },
+    {
+      "strategy": "csr",
+      "browserCache": "warm",
+      "serverCache": "N/A",
+      "samples": 10,
+      "hydrationErrors": 0,
+      "ttfbMs": {
+        "p50": 1.5,
+        "p95": 1.7000000029802322,
+        "p99": 1.7000000029802322
+      },
+      "fcpMs": {
+        "p50": 64,
+        "p95": 80,
+        "p99": 80
+      },
+      "lcpMs": {
+        "p50": 164,
+        "p95": 176,
+        "p99": 176
+      },
+      "productVisibleMs": {
+        "p50": 143.5,
+        "p95": 153.90000000596046,
+        "p99": 153.90000000596046
+      },
+      "userMenuReadyMs": {
+        "p50": 129.8999999910593,
+        "p95": 136.59999999403954,
+        "p99": 136.59999999403954
+      },
+      "catalogMs": {
+        "p50": 72.30000001192093,
+        "p95": 76.40000000596046,
+        "p99": 76.40000000596046
+      },
+      "jsTransferBytes": {
+        "p50": 0,
+        "p95": 0,
+        "p99": 0
+      },
+      "cssTransferBytes": {
+        "p50": 0,
+        "p95": 0,
+        "p99": 0
+      },
+      "cacheEvidence": {
+        "measuredSamples": 10,
+        "assetRequests": 40,
+        "cacheHits": 40,
+        "networkTransfers": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,592 @@
+{
+  "schemaVersion": 1,
+  "profile": "quick",
+  "complete": true,
+  "results": [
+    {
+      "id": "warm-r0-html-cache-s0",
+      "segment": "warm-0",
+      "scenario": "warm",
+      "strategy": "html-cache",
+      "cacheCondition": "warm",
+      "comparable": true,
+      "round": 0,
+      "count": 37715,
+      "errors": 0,
+      "timeouts": 0,
+      "latencyMs": {
+        "p50": 2.380292,
+        "p95": 4.334958,
+        "p99": 5.746667
+      },
+      "requestsPerSecond": 3772,
+      "units": {
+        "latency": "ms",
+        "throughput": "requests/second"
+      }
+    },
+    {
+      "id": "cold-r0-html-cache-serial",
+      "segment": "serial",
+      "scenario": "cold",
+      "strategy": "html-cache",
+      "cacheCondition": "cold",
+      "comparable": true,
+      "round": 0,
+      "count": 10,
+      "errors": 0,
+      "timeouts": 0,
+      "latencyMs": {
+        "p50": 4.849292000002606,
+        "p95": 6.528791000000638,
+        "p99": 6.528791000000638
+      },
+      "requestsPerSecond": null,
+      "units": {
+        "latency": "ms",
+        "throughput": "requests/second"
+      }
+    },
+    {
+      "id": "cold-r0-html-cache-burst0",
+      "segment": "burst-0",
+      "scenario": "cold-burst",
+      "strategy": "html-cache",
+      "cacheCondition": "cold",
+      "comparable": true,
+      "round": 0,
+      "count": 10,
+      "errors": 0,
+      "timeouts": 0,
+      "latencyMs": {
+        "p50": 7.330249999999069,
+        "p95": 7.383540999999241,
+        "p99": 7.383540999999241
+      },
+      "requestsPerSecond": null,
+      "units": {
+        "latency": "ms",
+        "throughput": "requests/second"
+      }
+    },
+    {
+      "id": "cold-r0-html-cache-burst1",
+      "segment": "burst-1",
+      "scenario": "cold-burst",
+      "strategy": "html-cache",
+      "cacheCondition": "cold",
+      "comparable": true,
+      "round": 0,
+      "count": 10,
+      "errors": 0,
+      "timeouts": 0,
+      "latencyMs": {
+        "p50": 5.142500000001746,
+        "p95": 5.176916000000347,
+        "p99": 5.176916000000347
+      },
+      "requestsPerSecond": null,
+      "units": {
+        "latency": "ms",
+        "throughput": "requests/second"
+      }
+    },
+    {
+      "id": "cold-r0-html-cache-burst2",
+      "segment": "burst-2",
+      "scenario": "cold-burst",
+      "strategy": "html-cache",
+      "cacheCondition": "cold",
+      "comparable": true,
+      "round": 0,
+      "count": 10,
+      "errors": 0,
+      "timeouts": 0,
+      "latencyMs": {
+        "p50": 5.655291999999463,
+        "p95": 5.694999999999709,
+        "p99": 5.694999999999709
+      },
+      "requestsPerSecond": null,
+      "units": {
+        "latency": "ms",
+        "throughput": "requests/second"
+      }
+    },
+    {
+      "id": "warm-r0-data-cache-s0",
+      "segment": "warm-0",
+      "scenario": "warm",
+      "strategy": "data-cache",
+      "cacheCondition": "warm",
+      "comparable": true,
+      "round": 0,
+      "count": 7324,
+      "errors": 0,
+      "timeouts": 0,
+      "latencyMs": {
+        "p50": 12.420916,
+        "p95": 22.604792,
+        "p99": 32.279625
+      },
+      "requestsPerSecond": 732.4,
+      "units": {
+        "latency": "ms",
+        "throughput": "requests/second"
+      }
+    },
+    {
+      "id": "cold-r0-data-cache-serial",
+      "segment": "serial",
+      "scenario": "cold",
+      "strategy": "data-cache",
+      "cacheCondition": "cold",
+      "comparable": true,
+      "round": 0,
+      "count": 10,
+      "errors": 0,
+      "timeouts": 0,
+      "latencyMs": {
+        "p50": 3.9454580000019632,
+        "p95": 10.140583999997034,
+        "p99": 10.140583999997034
+      },
+      "requestsPerSecond": null,
+      "units": {
+        "latency": "ms",
+        "throughput": "requests/second"
+      }
+    },
+    {
+      "id": "cold-r0-data-cache-burst0",
+      "segment": "burst-0",
+      "scenario": "cold-burst",
+      "strategy": "data-cache",
+      "cacheCondition": "cold",
+      "comparable": true,
+      "round": 0,
+      "count": 10,
+      "errors": 0,
+      "timeouts": 0,
+      "latencyMs": {
+        "p50": 16.108917000001384,
+        "p95": 16.135666999998648,
+        "p99": 16.135666999998648
+      },
+      "requestsPerSecond": null,
+      "units": {
+        "latency": "ms",
+        "throughput": "requests/second"
+      }
+    },
+    {
+      "id": "cold-r0-data-cache-burst1",
+      "segment": "burst-1",
+      "scenario": "cold-burst",
+      "strategy": "data-cache",
+      "cacheCondition": "cold",
+      "comparable": true,
+      "round": 0,
+      "count": 10,
+      "errors": 0,
+      "timeouts": 0,
+      "latencyMs": {
+        "p50": 13.960125000001426,
+        "p95": 13.98279199999888,
+        "p99": 13.98279199999888
+      },
+      "requestsPerSecond": null,
+      "units": {
+        "latency": "ms",
+        "throughput": "requests/second"
+      }
+    },
+    {
+      "id": "cold-r0-data-cache-burst2",
+      "segment": "burst-2",
+      "scenario": "cold-burst",
+      "strategy": "data-cache",
+      "cacheCondition": "cold",
+      "comparable": true,
+      "round": 0,
+      "count": 10,
+      "errors": 0,
+      "timeouts": 0,
+      "latencyMs": {
+        "p50": 12.867458000000624,
+        "p95": 12.903958999999304,
+        "p99": 12.903958999999304
+      },
+      "requestsPerSecond": null,
+      "units": {
+        "latency": "ms",
+        "throughput": "requests/second"
+      }
+    },
+    {
+      "id": "warm-r0-live-ssr-s0",
+      "segment": "warm-0",
+      "scenario": "warm",
+      "strategy": "live-ssr",
+      "cacheCondition": "N/A",
+      "comparable": true,
+      "round": 0,
+      "count": 7732,
+      "errors": 0,
+      "timeouts": 0,
+      "latencyMs": {
+        "p50": 11.771792,
+        "p95": 22.884042,
+        "p99": 31.437417
+      },
+      "requestsPerSecond": 773.2,
+      "units": {
+        "latency": "ms",
+        "throughput": "requests/second"
+      }
+    },
+    {
+      "id": "cold-r0-live-ssr-serial",
+      "segment": "serial",
+      "scenario": "cold",
+      "strategy": "live-ssr",
+      "cacheCondition": "N/A",
+      "comparable": true,
+      "round": 0,
+      "count": 10,
+      "errors": 0,
+      "timeouts": 0,
+      "latencyMs": {
+        "p50": 1.8693339999954333,
+        "p95": 2.3310420000052545,
+        "p99": 2.3310420000052545
+      },
+      "requestsPerSecond": null,
+      "units": {
+        "latency": "ms",
+        "throughput": "requests/second"
+      }
+    },
+    {
+      "id": "cold-r0-live-ssr-burst0",
+      "segment": "burst-0",
+      "scenario": "cold-burst",
+      "strategy": "live-ssr",
+      "cacheCondition": "N/A",
+      "comparable": true,
+      "round": 0,
+      "count": 10,
+      "errors": 0,
+      "timeouts": 0,
+      "latencyMs": {
+        "p50": 6.3429160000014235,
+        "p95": 12.440958999999566,
+        "p99": 12.440958999999566
+      },
+      "requestsPerSecond": null,
+      "units": {
+        "latency": "ms",
+        "throughput": "requests/second"
+      }
+    },
+    {
+      "id": "cold-r0-live-ssr-burst1",
+      "segment": "burst-1",
+      "scenario": "cold-burst",
+      "strategy": "live-ssr",
+      "cacheCondition": "N/A",
+      "comparable": true,
+      "round": 0,
+      "count": 10,
+      "errors": 0,
+      "timeouts": 0,
+      "latencyMs": {
+        "p50": 9.470666000001074,
+        "p95": 12.872083999995084,
+        "p99": 12.872083999995084
+      },
+      "requestsPerSecond": null,
+      "units": {
+        "latency": "ms",
+        "throughput": "requests/second"
+      }
+    },
+    {
+      "id": "cold-r0-live-ssr-burst2",
+      "segment": "burst-2",
+      "scenario": "cold-burst",
+      "strategy": "live-ssr",
+      "cacheCondition": "N/A",
+      "comparable": true,
+      "round": 0,
+      "count": 10,
+      "errors": 0,
+      "timeouts": 0,
+      "latencyMs": {
+        "p50": 9.982625000004191,
+        "p95": 13.032666999999492,
+        "p99": 13.032666999999492
+      },
+      "requestsPerSecond": null,
+      "units": {
+        "latency": "ms",
+        "throughput": "requests/second"
+      }
+    },
+    {
+      "id": "warm-r0-csr-shell-s0",
+      "segment": "warm-0",
+      "scenario": "warm",
+      "strategy": "csr-shell",
+      "cacheCondition": "N/A",
+      "comparable": false,
+      "round": 0,
+      "count": 87463,
+      "errors": 0,
+      "timeouts": 0,
+      "latencyMs": {
+        "p50": 0.90425,
+        "p95": 2.311459,
+        "p99": 2.905042
+      },
+      "requestsPerSecond": 8748,
+      "units": {
+        "latency": "ms",
+        "throughput": "requests/second"
+      }
+    },
+    {
+      "id": "warm-r0-csr-catalog-bff-s0",
+      "segment": "warm-0",
+      "scenario": "warm",
+      "strategy": "csr-catalog-bff",
+      "cacheCondition": "N/A",
+      "comparable": false,
+      "round": 0,
+      "count": 55933,
+      "errors": 0,
+      "timeouts": 0,
+      "latencyMs": {
+        "p50": 1.557125,
+        "p95": 2.684792,
+        "p99": 3.1225
+      },
+      "requestsPerSecond": 5594,
+      "units": {
+        "latency": "ms",
+        "throughput": "requests/second"
+      }
+    },
+    {
+      "id": "cold-r0-csr-shell-serial",
+      "segment": "serial",
+      "scenario": "cold",
+      "strategy": "csr-shell",
+      "cacheCondition": "N/A",
+      "comparable": false,
+      "round": 0,
+      "count": 10,
+      "errors": 0,
+      "timeouts": 0,
+      "latencyMs": {
+        "p50": 0.5155000000013388,
+        "p95": 1.1968750000014552,
+        "p99": 1.1968750000014552
+      },
+      "requestsPerSecond": null,
+      "units": {
+        "latency": "ms",
+        "throughput": "requests/second"
+      }
+    },
+    {
+      "id": "cold-r0-csr-shell-burst0",
+      "segment": "burst-0",
+      "scenario": "cold-burst",
+      "strategy": "csr-shell",
+      "cacheCondition": "N/A",
+      "comparable": false,
+      "round": 0,
+      "count": 10,
+      "errors": 0,
+      "timeouts": 0,
+      "latencyMs": {
+        "p50": 1.9069159999999101,
+        "p95": 2.9741250000006403,
+        "p99": 2.9741250000006403
+      },
+      "requestsPerSecond": null,
+      "units": {
+        "latency": "ms",
+        "throughput": "requests/second"
+      }
+    },
+    {
+      "id": "cold-r0-csr-shell-burst1",
+      "segment": "burst-1",
+      "scenario": "cold-burst",
+      "strategy": "csr-shell",
+      "cacheCondition": "N/A",
+      "comparable": false,
+      "round": 0,
+      "count": 10,
+      "errors": 0,
+      "timeouts": 0,
+      "latencyMs": {
+        "p50": 2.615749999997206,
+        "p95": 2.659249999996973,
+        "p99": 2.659249999996973
+      },
+      "requestsPerSecond": null,
+      "units": {
+        "latency": "ms",
+        "throughput": "requests/second"
+      }
+    },
+    {
+      "id": "cold-r0-csr-shell-burst2",
+      "segment": "burst-2",
+      "scenario": "cold-burst",
+      "strategy": "csr-shell",
+      "cacheCondition": "N/A",
+      "comparable": false,
+      "round": 0,
+      "count": 10,
+      "errors": 0,
+      "timeouts": 0,
+      "latencyMs": {
+        "p50": 2.9055000000007567,
+        "p95": 2.934499999995751,
+        "p99": 2.934499999995751
+      },
+      "requestsPerSecond": null,
+      "units": {
+        "latency": "ms",
+        "throughput": "requests/second"
+      }
+    },
+    {
+      "id": "combined-r0-csr",
+      "segment": "combined",
+      "scenario": "combined",
+      "strategy": "csr-combined",
+      "cacheCondition": "N/A",
+      "comparable": false,
+      "round": 0,
+      "count": 10,
+      "errors": 0,
+      "timeouts": 0,
+      "latencyMs": {
+        "p50": 0.963000000003376,
+        "p95": 1.4054590000014286,
+        "p99": 1.4054590000014286
+      },
+      "requestsPerSecond": null,
+      "transactionCost": {
+        "requestsPerTransaction": 2,
+        "totalRequests": 20,
+        "responseBytes": {
+          "p50": 9735,
+          "p95": 9735,
+          "p99": 9735
+        }
+      },
+      "units": {
+        "latency": "ms",
+        "throughput": "requests/second"
+      }
+    }
+  ],
+  "warmAggregates": [],
+  "correctness": [
+    {
+      "scenario": "html-cache-cold-burst-coalescing-r0",
+      "passed": true,
+      "evidence": {
+        "concurrency": 10,
+        "apiCalls": 1,
+        "ssrCalls": 1,
+        "leaders": 1,
+        "waiters": 9
+      }
+    },
+    {
+      "scenario": "data-cache-cold-burst-coalescing-r0",
+      "passed": true,
+      "evidence": {
+        "concurrency": 10,
+        "apiCalls": 1,
+        "ssrCalls": 10,
+        "leaders": 1,
+        "waiters": 9
+      }
+    },
+    {
+      "scenario": "mutation-price",
+      "passed": true,
+      "evidence": {
+        "observedAffectedMisses": 6,
+        "observedUnaffectedHits": 18,
+        "priceMinor": 999,
+        "formattedPrice": "£9.99",
+        "dataVersion": 2
+      }
+    },
+    {
+      "scenario": "mutation-translation",
+      "passed": true,
+      "evidence": {
+        "observedAffectedMisses": 8,
+        "observedUnaffectedHits": 16,
+        "name": "Benchmark Translation",
+        "dataVersion": 3
+      }
+    },
+    {
+      "scenario": "mutation-inventory",
+      "passed": true,
+      "evidence": {
+        "observedTargetKeys": 24,
+        "inventory": 0,
+        "dataVersion": 4
+      }
+    },
+    {
+      "scenario": "mutation-product",
+      "passed": true,
+      "evidence": {
+        "observedTargetKeys": 24
+      }
+    },
+    {
+      "scenario": "mutation-reset",
+      "passed": true,
+      "evidence": {
+        "observedTargetKeys": 24,
+        "inventory": 18,
+        "dataVersion": 1
+      }
+    },
+    {
+      "scenario": "redis-failure",
+      "passed": true,
+      "evidence": {
+        "html": "BYPASS",
+        "data": "BYPASS",
+        "live": "control",
+        "csr": "control"
+      }
+    },
+    {
+      "scenario": "commerce-failure",
+      "passed": true,
+      "evidence": {
+        "cached": "HIT",
+        "uncached": 503,
+        "csrShell": 200,
+        "csrBff": 503,
+        "browserRetry": "recovered"
+      }
+    }
+  ]
+}
